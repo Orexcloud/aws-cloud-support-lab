@@ -1,51 +1,46 @@
 # AWS Cloud Support Lab
 
-## Project Overview
+I'm using this repository to document my AWS practice as I refresh my cloud support skills and build more hands-on experience.
 
-This repository documents my hands-on learning and practical work with core AWS services used in cloud support and cloud operations.
+The main focus is AWS infrastructure, basic cloud operations, monitoring and troubleshooting. I'll be building the environment gradually and documenting what I configure and what I learn along the way.
 
-The project focuses on building, configuring, monitoring, and troubleshooting a basic AWS environment using:
+## What I'm working with
 
-* Amazon EC2
-* Amazon VPC
+* EC2
+* VPC and subnets
 * IAM
-* Security Groups
-* Amazon S3
-* Amazon CloudWatch
+* Security groups
+* S3
+* CloudWatch
 
-## Project Objectives
+## What I'm trying to build
 
-The objectives of this lab are to:
+A small AWS environment that I can use to practise common cloud support tasks, including:
 
-* Refresh and strengthen my practical AWS knowledge.
-* Build a basic and secure cloud environment.
-* Apply IAM least-privilege principles.
-* Configure network access using VPC and security groups.
-* Monitor AWS resources using Amazon CloudWatch.
-* Practise basic cloud troubleshooting.
-* Document technical decisions, issues, and lessons learned.
+* setting up and securing AWS resources
+* checking network and access configuration
+* monitoring resources
+* investigating common issues
+* documenting fixes and configuration changes
 
-## Current Status
+I'm also using the project to refresh areas of AWS that I haven't worked with recently.
 
-In progress.
+## Progress
 
-## Planned Project Stages
+* [x] Review existing IAM setup
+* [ ] Create VPC and subnet
+* [ ] Configure security group
+* [ ] Launch EC2 instance
+* [ ] Set up CloudWatch monitoring
+* [ ] Test and troubleshoot common issues
+* [ ] Document the final environment
 
-1. Review AWS account security and cost controls.
-2. Create and configure an EC2 instance.
-3. Review VPC, subnet, and security group configuration.
-4. Configure IAM access using least-privilege principles.
-5. Configure CloudWatch monitoring.
-6. Simulate and troubleshoot common support issues.
-7. Document the architecture, findings, and lessons learned.
+More notes and configuration details will be added as I work through the lab.
 
-## Skills Demonstrated
+## Background
 
-AWS Cloud Fundamentals | EC2 | VPC | IAM | Security Groups | S3 | CloudWatch | Monitoring | Troubleshooting | Technical Documentation
+I'm an AWS Certified Solutions Architect – Associate working towards a career in cloud support and cloud operations.
 
-## Author
+This is a personal learning project, so the repository reflects my own practice and troubleshooting rather than production infrastructure.
 
-Ore Olaniyi
-
-AWS Certified Solutions Architect – Associate
 
