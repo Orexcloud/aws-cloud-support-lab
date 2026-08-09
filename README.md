@@ -1,10 +1,10 @@
-# AWS Cloud Support Lab
+## AWS Cloud Support Lab
 
 I'm using this repository to document my AWS practice as I refresh my cloud support skills and build more hands-on experience.
 
 The main focus is AWS infrastructure, basic cloud operations, monitoring and troubleshooting. I'll be building the environment gradually and documenting what I configure and what I learn along the way.
 
-## What I'm working with
+### What I'm working with
 
 * EC2
 * VPC and subnets
@@ -13,7 +13,7 @@ The main focus is AWS infrastructure, basic cloud operations, monitoring and tro
 * S3
 * CloudWatch
 
-## What I'm trying to build
+### What I'm trying to build
 
 A small AWS environment that I can use to practise common cloud support tasks, including:
 
@@ -25,7 +25,7 @@ A small AWS environment that I can use to practise common cloud support tasks, i
 
 I'm also using the project to refresh areas of AWS that I haven't worked with recently.
 
-## Progress
+### Progress
 
 * [x] Review existing IAM setup
 * [ ] Create VPC and subnet
@@ -37,7 +37,7 @@ I'm also using the project to refresh areas of AWS that I haven't worked with re
 
 More notes and configuration details will be added as I work through the lab.
 
-## Background
+### Background
 
 I'm an AWS Certified Solutions Architect – Associate working towards a career in cloud support and cloud operations.
 
