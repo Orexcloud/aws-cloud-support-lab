@@ -1,36 +1,19 @@
-# IAM Security Review
+## IAM review
 
-## Existing AWS Environment
+Before starting the lab, I checked the IAM setup in the AWS account to see what was already there.
 
-Before creating new infrastructure, I reviewed the existing IAM configuration in the AWS account.
+There is one IAM user, which is a member of an `admin` group. The group has the `AdministratorAccess` policy attached.
 
-### Existing IAM User
+I also found an existing role called `DemoRoleForEC2`. The role trusts the EC2 service and has the `IAMReadOnlyAccess` policy attached.
 
-The account contains one IAM user. The user receives permissions through an administrator group with the `AdministratorAccess` managed policy.
+The trust relationship allows EC2 to assume the role using `sts:AssumeRole`.
 
-### Existing EC2 Role
+I didn't change or remove the existing role because it appears to be from previous AWS learning activity. I also decided not to use it for this lab because the permissions aren't needed for what I'm building.
 
-An existing IAM role named `DemoRoleForEC2` was identified.
+### What I took from this
 
-**Trusted entity:** Amazon EC2
+The main thing I wanted to refresh here was the difference between a role's trust policy and its permissions.
 
-**Attached permission policy:** `IAMReadOnlyAccess`
+The trust policy controls who can assume the role. The permissions policy controls what the role can do once it has been assumed.
 
-### Trust Relationship
-
-The role's trust policy allows the EC2 service to assume the role using `sts:AssumeRole`.
-
-### Assessment
-
-The role appears to have been created for previous AWS learning activities. Its permissions provide read-only access to IAM and are not required for the current cloud support lab.
-
-The role was therefore reviewed but not modified or reused.
-
-## Key Learning
-
-IAM roles have two important components:
-
-* **Trust policy:** defines who or what can assume the role.
-* **Permissions policy:** defines what the role is allowed to do after it is assumed.
-
-For the new lab environment, a separate role will be created with permissions appropriate to the workload and following the principle of least privilege.
+For the new environment, I'll create the permissions needed for the lab rather than reusing the old role.
