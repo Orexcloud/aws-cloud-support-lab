@@ -32,6 +32,8 @@ SSH access was restricted to my current public IPv4 address using a `/32` securi
 
 [View VPC setup](documentation/vpc-setup.md)
 
+
+
 #### EC2 and Linux
 
 I launched an Amazon Linux 2023 EC2 instance and connected to it using SSH from Windows.
@@ -41,6 +43,8 @@ On the instance I checked system resources, storage, CPU information, interfaces
 I created a simple web page and made it accessible over HTTP.
 
 [View EC2 and web server setup](documentation/ec2-setup.md)
+
+
 
 #### Monitoring
 
@@ -53,6 +57,8 @@ I created a CloudWatch alarm with a 70% CPU threshold and observed it move throu
 An SNS email notification was also configured during testing. The CloudWatch alarm worked, but the email subscription did not remain subscribed, so email delivery was not recorded as a successful part of the test.
 
 [View monitoring notes](documentation/monitoring.md)
+
+
 
 #### Troubleshooting
 
@@ -74,11 +80,13 @@ I also reviewed IAM configuration and documented the security checks performed a
 
 [View IAM notes](documentation/iam-security.md)
 
+
 ### Evidence
 
 Screenshots from the build and troubleshooting exercises are stored in the [`screenshots`](screenshots/) directory.
 
 They include VPC and subnet configuration, EC2/SSH access, Apache testing, CloudWatch CPU metrics and the triggered CPU alarm.
+
 
 ### Cleanup
 
